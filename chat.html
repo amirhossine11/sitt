@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>چت آنلاین</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <h2>چت آنلاین</h2>
+      <button onclick="logout()">خروج</button>
+    </div>
+    <div class="messages" id="messages"></div>
+    <div class="chat-input">
+      <input type="text" id="msg-input" placeholder="پیام..." />
+      <button onclick="sendMessage()">ارسال</button>
+    </div>
+  </div>
+</body>
+</html>

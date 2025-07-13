@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ورود / ثبت‌نام</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="auth-container">
+    <h2 id="auth-title">ورود</h2>
+    <div id="auth-form">
+      <input type="email" id="email" placeholder="ایمیل" />
+      <input type="password" id="password" placeholder="رمز عبور" />
+      <button onclick="login()">ورود</button>
+      <p>حساب نداری؟ <a href="#" onclick="toggleForm()">ثبت‌نام کن</a></p>
+    </div>
+  </div>
+</body>
+</html>
